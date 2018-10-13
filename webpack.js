@@ -22,24 +22,35 @@ module.exports = {
             },
             {
                 test:/\.vue$/,
-                use:{
-                    loader:'vue-loader',
-                },
+                use: [
+                    {
+                        loader:'vue-loader',
+                    },
+                    {
+                        loader: 'iview-loader',
+                        options: {
+                            prefix: false
+                        }
+                    }
+                   
+                ] 
+                
             },
             {
                 test:/\.css$/,
                 use:['style-loader','css-loader']
             },
             {
-                test:/\.(png|jpg|gif)$/,
-                use:[
-                    {
-                        loader:'url-loader',
-                        options:{
-                            limit:20000
-                        }
-                    }
-                ]
+                test: /iview\/.*?js$/,
+                loader: 'babel-loader'
+            },
+            {
+                test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
+                loader: 'url-loader?limit=20000'
+            },
+            {
+                test: /\.(html|tpl)$/,
+                loader: 'html-loader'
             },
         ]
     },
