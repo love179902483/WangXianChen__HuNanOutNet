@@ -50,7 +50,7 @@
 </script>
 <style scoped>
     .demo-carousel{
-        height: 500px;
+        height: 450px;
     }
     .demo-carousel img{
         width: 100%;

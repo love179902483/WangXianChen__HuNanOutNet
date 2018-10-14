@@ -1,7 +1,7 @@
 <template>
     <div class="lbz-business-container">
         <div class="lbz-business-title">
-            <Divider>业务办理</Divider>
+            <Divider><span class="lbz-title">业务办理</span> </Divider>
         </div>
         
         <ul class="lbz-business-menu">
@@ -13,7 +13,7 @@
       
        <div class="lbz-business-menu-body">
            <ul>
-               <li>aaaaa</li>
+               <!-- <li>aaaaa</li> -->
            </ul>
        </div>
         <Divider style="width:80%;margin:auto"></Divider>
@@ -117,7 +117,7 @@
         padding: 20px;
     }
     .lbz-business-menu li:hover{
-        color: rgb(29, 29, 29)
+        color: #000
     }
     .lbz-business-menu-body{
         height: 60px;

@@ -1,7 +1,7 @@
 <template>
     <div class="lbz-members-container">
         <div class="lbz-members-title">
-            <Divider>成员单位</Divider>
+            <Divider><span class="lbz-title">成员单位</span> </Divider>
         </div>
         <ul class="lbz-members-members-container">
             <li v-for="(item,index) in members" :key="index">

@@ -1,8 +1,8 @@
 <template>
     <div>
-        <Divider>政务公开</Divider>
+        <Divider><span class="lbz-title">政务公开</span></Divider>
         <div class="lbz-affairs">
-            <Tabs value="001" class="lbz-affairs-tabs">
+            <Tabs value="002" class="lbz-affairs-tabs">
                 <TabPane v-for="(item,index) in affiarTabsData" :key="index" :label="item.label" :name="item.name">
                     <ul>
                         <li class="lbz-tabs-body" v-for="(thisLi,index) in item.children" :key="index">

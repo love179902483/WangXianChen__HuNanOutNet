@@ -4,6 +4,11 @@ import VueRouter from 'vue-router'
 import router from '../router/router'
 Vue.use(VueRouter)
 
+import Vuex from 'vuex'
+import store from '../store/store'
+Vue.use(Vuex)
+
+
 import iView from 'iview'
 import locale from 'iview/dist/locale/en-US'
 import 'iview/dist/styles/iview.css'
@@ -16,6 +21,7 @@ import App from './App.vue'
 
 
 new Vue({
+    store,
     router,
     render:h=>h(App)
 }).$mount('#app')
